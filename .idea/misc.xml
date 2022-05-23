@@ -3,12 +3,13 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/abr35/AndroidStudioProjects/KidsApp/app/src/main/res/layout-land/activity_main.xml" value="0.19322916666666667" />
         <entry key="..\:/Users/abr35/AndroidStudioProjects/KidsApp/app/src/main/res/layout/activity_animal.xml" value="0.17760416666666667" />
         <entry key="..\:/Users/abr35/AndroidStudioProjects/KidsApp/app/src/main/res/layout/activity_catagories.xml" value="0.27291666666666664" />
-        <entry key="..\:/Users/abr35/AndroidStudioProjects/KidsApp/app/src/main/res/layout/activity_catagories2.xml" value="0.1384083044982699" />
+        <entry key="..\:/Users/abr35/AndroidStudioProjects/KidsApp/app/src/main/res/layout/activity_catagories2.xml" value="0.18" />
         <entry key="..\:/Users/abr35/AndroidStudioProjects/KidsApp/app/src/main/res/layout/activity_color.xml" value="0.12552083333333333" />
         <entry key="..\:/Users/abr35/AndroidStudioProjects/KidsApp/app/src/main/res/layout/activity_letter.xml" value="0.27291666666666664" />
-        <entry key="..\:/Users/abr35/AndroidStudioProjects/KidsApp/app/src/main/res/layout/activity_main.xml" value="0.25885416666666666" />
+        <entry key="..\:/Users/abr35/AndroidStudioProjects/KidsApp/app/src/main/res/layout/activity_main.xml" value="0.22" />
         <entry key="..\:/Users/abr35/AndroidStudioProjects/KidsApp/app/src/main/res/layout/activity_number.xml" value="0.27291666666666664" />
       </map>
     </option>
