@@ -10,6 +10,24 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.KidsApp">
         <activity
+            android:name=".cat"
+            android:exported="false" />
+        <activity
+            android:name=".Animal"
+            android:exported="false" />
+        <activity
+            android:name=".Number"
+            android:exported="false" />
+        <activity
+            android:name=".Color"
+            android:exported="false" />
+        <activity
+            android:name=".Letter"
+            android:exported="false" />
+        <activity
+            android:name=".Catagories"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>

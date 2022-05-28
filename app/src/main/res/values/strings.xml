@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">KidsApp</string>
+    <string name="First_Background">Main Background</string>
+    <string name="Start">Start</string>
+    <string name="letter">Letter</string>
+    <string name="number">Number</string>
+    <string name="color">Color</string>
+    <string name="animal">Animal</string>
+    <string name="todo">TODO</string>
 </resources>
