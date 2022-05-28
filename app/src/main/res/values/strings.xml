@@ -6,4 +6,5 @@
     <string name="number">Number</string>
     <string name="color">Color</string>
     <string name="animal">Animal</string>
+    <string name="todo">TODO</string>
 </resources>

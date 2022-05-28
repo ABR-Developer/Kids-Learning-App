@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.KidsApp">
         <activity
+            android:name=".cat"
+            android:exported="false" />
+        <activity
             android:name=".Animal"
             android:exported="false" />
         <activity
