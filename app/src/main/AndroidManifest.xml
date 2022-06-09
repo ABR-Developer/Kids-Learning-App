@@ -10,13 +10,19 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.KidsApp">
         <activity
-            android:name=".cat"
-            android:exported="false" />
-        <activity
-            android:name=".Animal"
+            android:name=".number_1"
             android:exported="false" />
         <activity
             android:name=".Number"
+            android:exported="false" />
+        <activity
+            android:name=".LetterQuiz"
+            android:exported="false" />
+        <activity
+            android:name=".A"
+            android:exported="false" />
+        <activity
+            android:name=".Animal"
             android:exported="false" />
         <activity
             android:name=".Color"

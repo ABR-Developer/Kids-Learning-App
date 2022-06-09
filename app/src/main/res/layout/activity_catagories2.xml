@@ -6,189 +6,192 @@
     android:layout_height="match_parent"
     tools:context=".Catagories">
 
-    <ImageView
-        android:id="@+id/imageView2"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:contentDescription="@string/First_Background"
-        android:scaleType="fitXY"
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0"
-        app:srcCompat="@drawable/image_bd_catagories"
-        tools:ignore="ImageContrastCheck" />
+        app:layout_constraintTop_toTopOf="parent">
 
-    <View
-        android:id="@+id/view"
-        android:layout_width="180dp"
-        android:layout_height="240dp"
-        android:layout_margin="20dp"
-        android:background="@android:color/holo_red_dark"
-        app:layout_constraintBottom_toBottomOf="@+id/view6"
-        app:layout_constraintEnd_toStartOf="@+id/view6"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/view6" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
 
-    <View
-        android:id="@+id/view6"
-        android:layout_width="180dp"
-        android:layout_height="240dp"
-        android:layout_margin="20dp"
-        android:background="?attr/colorPrimaryVariant"
-        app:layout_constraintBottom_toBottomOf="@+id/view7"
-        app:layout_constraintEnd_toStartOf="@+id/view7"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/view"
-        app:layout_constraintTop_toTopOf="@+id/view7" />
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="300dp">
 
-    <View
-        android:id="@+id/view7"
-        android:layout_width="180dp"
-        android:layout_height="240dp"
-        android:layout_margin="20dp"
-        android:background="#089108"
-        app:layout_constraintBottom_toBottomOf="@+id/view8"
-        app:layout_constraintEnd_toStartOf="@+id/view8"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/view6"
-        app:layout_constraintTop_toTopOf="@+id/view8" />
+                <View
+                    android:id="@+id/Letter_View"
+                    android:layout_width="180dp"
+                    android:layout_height="240dp"
+                    android:layout_margin="20dp"
+                    android:background="@android:color/holo_red_dark"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
 
-    <View
-        android:id="@+id/view8"
-        android:layout_width="180dp"
-        android:layout_height="240dp"
-        android:layout_margin="20dp"
-        android:background="#DDC702"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/view7"
-        app:layout_constraintTop_toTopOf="parent" />
+                <ImageView
+                    android:id="@+id/Letter_image"
+                    android:layout_width="160dp"
+                    android:layout_height="160dp"
+                    android:contentDescription="@string/A_a"
+                    android:scaleType="fitXY"
+                    app:layout_constraintBottom_toTopOf="@+id/Letter"
+                    app:layout_constraintEnd_toEndOf="@+id/Letter_View"
+                    app:layout_constraintStart_toStartOf="@+id/Letter_View"
+                    app:layout_constraintTop_toTopOf="@+id/Letter_View"
+                    app:srcCompat="@drawable/abc" />
 
-    <ImageView
-        android:id="@+id/imageView4"
-        android:layout_width="160dp"
-        android:layout_height="160dp"
-        android:layout_marginStart="10dp"
-        android:layout_marginLeft="10dp"
-        android:layout_marginTop="30dp"
-        android:layout_marginEnd="10dp"
-        android:layout_marginRight="10dp"
-        android:layout_marginBottom="90dp"
-        android:scaleType="fitXY"
-        app:layout_constraintBottom_toBottomOf="@+id/view"
-        app:layout_constraintEnd_toEndOf="@+id/view"
-        app:layout_constraintStart_toStartOf="@+id/view"
-        app:layout_constraintTop_toTopOf="@+id/view"
-        app:srcCompat="@drawable/abc" />
+                <Button
+                    android:id="@+id/Letter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#00000000"
+                    android:contentDescription="@string/A_a"
+                    android:text="@string/letter"
+                    android:textSize="28sp"
+                    android:textStyle="bold|italic"
+                    app:layout_constraintBottom_toBottomOf="@+id/Letter_View"
+                    app:layout_constraintEnd_toEndOf="@+id/Letter_image"
+                    app:layout_constraintHorizontal_bias="0.314"
+                    app:layout_constraintStart_toStartOf="@+id/Letter_image"
+                    app:layout_constraintTop_toBottomOf="@+id/Letter_image"
+                    tools:ignore="DuplicateSpeakableTextCheck" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
 
-    <ImageView
-        android:id="@+id/imageView9"
-        android:layout_width="160dp"
-        android:layout_height="160dp"
-        android:layout_marginStart="10dp"
-        android:layout_marginLeft="10dp"
-        android:layout_marginTop="30dp"
-        android:layout_marginEnd="10dp"
-        android:layout_marginRight="10dp"
-        android:layout_marginBottom="90dp"
-        android:scaleType="fitXY"
-        app:layout_constraintBottom_toBottomOf="@+id/view6"
-        app:layout_constraintEnd_toEndOf="@+id/view6"
-        app:layout_constraintStart_toStartOf="@+id/view6"
-        app:layout_constraintTop_toTopOf="@+id/view6"
-        app:srcCompat="@drawable/image_123" />
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="300dp">
 
-    <ImageView
-        android:id="@+id/imageView10"
-        android:layout_width="160dp"
-        android:layout_height="160dp"
-        android:layout_marginStart="10dp"
-        android:layout_marginLeft="10dp"
-        android:layout_marginTop="30dp"
-        android:layout_marginEnd="10dp"
-        android:layout_marginRight="10dp"
-        android:layout_marginBottom="90dp"
-        android:scaleType="fitXY"
-        app:layout_constraintBottom_toBottomOf="@+id/view7"
-        app:layout_constraintEnd_toEndOf="@+id/view7"
-        app:layout_constraintStart_toStartOf="@+id/view7"
-        app:layout_constraintTop_toTopOf="@+id/view7"
-        app:srcCompat="@drawable/colors" />
+                <View
+                    android:id="@+id/Number_View"
+                    android:layout_width="180dp"
+                    android:layout_height="240dp"
+                    android:layout_margin="20dp"
+                    android:background="?attr/colorPrimaryVariant"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.487"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
 
-    <ImageView
-        android:id="@+id/imageView11"
-        android:layout_width="160dp"
-        android:layout_height="160dp"
-        android:layout_marginStart="10dp"
-        android:layout_marginLeft="10dp"
-        android:layout_marginTop="30dp"
-        android:layout_marginEnd="10dp"
-        android:layout_marginRight="10dp"
-        android:layout_marginBottom="90dp"
-        android:scaleType="fitXY"
-        app:layout_constraintBottom_toBottomOf="@+id/view8"
-        app:layout_constraintEnd_toEndOf="@+id/view8"
-        app:layout_constraintStart_toStartOf="@+id/view8"
-        app:layout_constraintTop_toTopOf="@+id/view8"
-        app:srcCompat="@drawable/animal" />
+                <ImageView
+                    android:id="@+id/Number_Image"
+                    android:layout_width="160dp"
+                    android:layout_height="160dp"
+                    android:scaleType="fitXY"
+                    app:layout_constraintBottom_toTopOf="@+id/Number"
+                    app:layout_constraintEnd_toEndOf="@+id/Number"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toStartOf="@+id/Number"
+                    app:layout_constraintTop_toTopOf="@+id/Number_View"
+                    app:srcCompat="@drawable/image_123" />
 
-    <Button
-        android:id="@+id/Animal"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="#00000000"
-        android:text="@string/animal"
-        android:textSize="28sp"
-        android:textStyle="bold|italic"
-        app:layout_constraintBottom_toBottomOf="@+id/view8"
-        app:layout_constraintEnd_toEndOf="@+id/view8"
-        app:layout_constraintStart_toStartOf="@+id/view8"
-        app:layout_constraintTop_toBottomOf="@+id/imageView11" />
+                <Button
+                    android:id="@+id/Number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#00000000"
+                    android:text="@string/number"
+                    android:textSize="28sp"
+                    android:textStyle="bold|italic"
+                    app:layout_constraintBottom_toBottomOf="@+id/Number_View"
+                    app:layout_constraintEnd_toEndOf="@+id/Number_View"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toStartOf="@+id/Number_View"
+                    app:layout_constraintTop_toBottomOf="@+id/Number_Image" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
 
-    <Button
-        android:id="@+id/Color"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="#00000000"
-        android:text="@string/color"
-        android:textSize="28sp"
-        android:textStyle="bold|italic"
-        app:layout_constraintBottom_toBottomOf="@+id/view7"
-        app:layout_constraintEnd_toEndOf="@+id/view7"
-        app:layout_constraintStart_toStartOf="@+id/view7"
-        app:layout_constraintTop_toBottomOf="@+id/imageView10" />
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="300dp">
 
+                <View
+                    android:id="@+id/Color_View"
+                    android:layout_width="180dp"
+                    android:layout_height="240dp"
+                    android:layout_margin="20dp"
+                    android:background="#089108"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
 
-    <Button
-        android:id="@+id/Number"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="#00000000"
-        android:text="@string/number"
-        android:textSize="28sp"
-        android:textStyle="bold|italic"
-        app:layout_constraintBottom_toBottomOf="@+id/view6"
-        app:layout_constraintEnd_toEndOf="@+id/view6"
-        app:layout_constraintStart_toStartOf="@+id/view6"
-        app:layout_constraintTop_toBottomOf="@+id/imageView9" />
+                <ImageView
+                    android:id="@+id/Color_image"
+                    android:layout_width="160dp"
+                    android:layout_height="160dp"
+                    android:scaleType="fitXY"
+                    app:layout_constraintBottom_toTopOf="@+id/Color"
+                    app:layout_constraintEnd_toEndOf="@+id/Color_View"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toStartOf="@+id/Color_View"
+                    app:layout_constraintTop_toTopOf="@+id/Color_View"
+                    app:srcCompat="@drawable/colors" />
 
-    <Button
-        android:id="@+id/Letter"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="#00000000"
-        android:text="@string/letter"
-        android:textSize="28sp"
-        android:textStyle="bold|italic"
-        app:layout_constraintBottom_toBottomOf="@+id/view"
-        app:layout_constraintEnd_toEndOf="@+id/view"
-        app:layout_constraintHorizontal_bias="0.557"
-        app:layout_constraintStart_toStartOf="@+id/view"
-        app:layout_constraintTop_toBottomOf="@+id/imageView4" />
+                <Button
+                    android:id="@+id/Color"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#00000000"
+                    android:text="@string/color"
+                    android:textSize="28sp"
+                    android:textStyle="bold|italic"
+                    app:layout_constraintBottom_toBottomOf="@+id/Color_View"
+                    app:layout_constraintEnd_toEndOf="@+id/Color_View"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toStartOf="@+id/Color_View"
+                    app:layout_constraintTop_toBottomOf="@+id/Color_image" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="300dp">
+
+                <View
+                    android:id="@+id/Animal_View"
+                    android:layout_width="180dp"
+                    android:layout_height="240dp"
+                    android:layout_margin="20dp"
+                    android:background="#DDC702"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:id="@+id/Animal_image"
+                    android:layout_width="160dp"
+                    android:layout_height="160dp"
+                    android:scaleType="fitXY"
+                    app:layout_constraintBottom_toTopOf="@+id/Animal"
+                    app:layout_constraintEnd_toEndOf="@+id/Animal_View"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toStartOf="@+id/Animal_View"
+                    app:layout_constraintTop_toTopOf="@+id/Animal_View"
+                    app:srcCompat="@drawable/animal" />
+
+                <Button
+                    android:id="@+id/Animal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#00000000"
+                    android:text="@string/animal"
+                    android:textSize="28sp"
+                    android:textStyle="bold|italic"
+                    app:layout_constraintBottom_toBottomOf="@+id/Animal_View"
+                    app:layout_constraintEnd_toEndOf="@+id/Animal_View"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toStartOf="@+id/Animal_View"
+                    app:layout_constraintTop_toBottomOf="@+id/Animal_image" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
