@@ -1,7 +1,5 @@
 <resources>
     <string name="app_name">KidsApp</string>
-<<<<<<< HEAD
-=======
     <string name="First_Background">Main Background</string>
     <string name="Start">Start</string>
     <string name="letter">Letter</string>
@@ -57,5 +55,4 @@
     <string name="number_18">18</string>
     <string name="number_19">19</string>
     <string name="number_20">20</string>
->>>>>>> c199ec73722b8817318ffdf26497b7c7f3651a5e
 </resources>
