@@ -10,21 +10,13 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.KidsApp">
         <activity
-<<<<<<< HEAD
-=======
-            android:name=".number_1"
-            android:exported="false" />
-        <activity
-            android:name=".Number"
-            android:exported="false" />
-        <activity
-            android:name=".LetterQuiz"
-            android:exported="false" />
-        <activity
-            android:name=".A"
+            android:name=".cat"
             android:exported="false" />
         <activity
             android:name=".Animal"
+            android:exported="false" />
+        <activity
+            android:name=".Number"
             android:exported="false" />
         <activity
             android:name=".Color"
@@ -33,10 +25,9 @@
             android:name=".Letter"
             android:exported="false" />
         <activity
-            android:name=".Categories"
+            android:name=".Catagories"
             android:exported="false" />
         <activity
->>>>>>> c199ec73722b8817318ffdf26497b7c7f3651a5e
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
