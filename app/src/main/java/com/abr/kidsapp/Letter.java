@@ -6,12 +6,14 @@ import android.view.View.OnClickListener;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.AdapterView;
 import android.widget.Button;
+import android.widget.ListView;
+
 import java.util.ArrayList;
 
 public class Letter extends AppCompatActivity implements OnClickListener
 {
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -187,8 +189,8 @@ public class Letter extends AppCompatActivity implements OnClickListener
             intent.putExtra("imageNameStartsWith","z_for_");
             startActivity(intent);
         }
-        else if(view.getId() == R.id.Back){
-            Intent intent = new Intent(Letter.this , MainScreen.class);
+        else if(view.getId() == R.id.change_list){
+            Intent intent = new Intent(Letter.this , LetterListView.class);
             startActivity(intent);
         }
         else if(view.getId() == R.id.Quiz){

@@ -60,4 +60,6 @@
     <string name="repository_link">View Repository</string>
     <string name="select_image">Select the right image of :</string>
     <string name="goto_home">Go To Home Screen</string>
+    <string name="change_view">Change</string>
+    <string name="main_heading">Main Heading</string>
 </resources>
