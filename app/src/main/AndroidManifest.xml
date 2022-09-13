@@ -10,7 +10,13 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.KidsApp">
         <activity
-            android:name=".cat"
+            android:name=".LetterQuiz"
+            android:exported="false" />
+        <activity
+            android:name=".LetterTutorial"
+            android:exported="false" />
+        <activity
+            android:name=".MainScreen"
             android:exported="false" />
         <activity
             android:name=".Animal"
@@ -29,8 +35,10 @@
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
     </application>
+
 </manifest>

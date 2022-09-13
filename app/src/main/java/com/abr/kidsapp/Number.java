@@ -33,11 +33,11 @@ public class Number extends AppCompatActivity implements View.OnClickListener{
     @Override
     public void onClick(View view) {
         if(view.getId() == R.id.number_1){
-            Intent intent = new Intent(this , number_1.class);
-            intent.putExtra("button","1");
-//            intent.putExtra("imageNameStartsWith","letter_a");
-            startActivity(intent);
-            setContentView(R.layout.activity_number1);
+//            Intent intent = new Intent(this , number_1.class);
+//            intent.putExtra("button","1");
+////            intent.putExtra("imageNameStartsWith","letter_a");
+//            startActivity(intent);
+//            setContentView(R.layout.activity_number1);
         }
     }
 }
