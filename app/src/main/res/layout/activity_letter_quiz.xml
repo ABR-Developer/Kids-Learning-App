@@ -12,7 +12,9 @@
         android:layout_height="wrap_content"
         android:contentDescription="@string/First_Background"
         android:text="@string/select_image"
-        android:textSize="28sp"
+        android:textColor="@color/brown"
+        android:textSize="24sp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/question_text_view2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
@@ -24,6 +26,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:contentDescription="@string/First_Background"
+        android:textColor="@color/brown"
+        android:textSize="36sp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/image_option_2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -31,8 +36,8 @@
 
     <ImageView
         android:id="@+id/image_option_1"
-        android:layout_width="125dp"
-        android:layout_height="125dp"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
         android:contentDescription="@string/First_Background"
         app:layout_constraintBottom_toBottomOf="@+id/image_option_2"
         app:layout_constraintEnd_toStartOf="@+id/image_option_2"
@@ -43,8 +48,8 @@
 
     <ImageView
         android:id="@+id/image_option_2"
-        android:layout_width="125dp"
-        android:layout_height="125dp"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
         android:contentDescription="@string/First_Background"
         app:layout_constraintBottom_toTopOf="@+id/image_option_4"
         app:layout_constraintEnd_toEndOf="parent"
@@ -54,8 +59,8 @@
 
     <ImageView
         android:id="@+id/image_option_3"
-        android:layout_width="125dp"
-        android:layout_height="125dp"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
         android:contentDescription="@string/First_Background"
         app:layout_constraintBottom_toBottomOf="@+id/image_option_4"
         app:layout_constraintEnd_toStartOf="@+id/image_option_4"
@@ -66,8 +71,8 @@
 
     <ImageView
         android:id="@+id/image_option_4"
-        android:layout_width="125dp"
-        android:layout_height="125dp"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
         android:contentDescription="@string/First_Background"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -75,5 +80,15 @@
         app:layout_constraintStart_toEndOf="@+id/image_option_3"
         app:layout_constraintTop_toBottomOf="@+id/image_option_2"
         tools:ignore="ImageContrastCheck" />
+
+    <TextView
+        android:id="@+id/question_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/question_text_view"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

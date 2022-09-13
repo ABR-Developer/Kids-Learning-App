@@ -58,5 +58,6 @@
     <string name="goto_tutorial">Go To Tutorial</string>
     <string name="goto_quiz">Go To Quiz</string>
     <string name="repository_link">View Repository</string>
-    <string name="select_image">Select the right image:</string>
+    <string name="select_image">Select the right image of :</string>
+    <string name="goto_home">Go To Home Screen</string>
 </resources>
